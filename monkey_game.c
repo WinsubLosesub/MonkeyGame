@@ -21,7 +21,7 @@ int main(void) {
         char maybe;
         char eyes;
         while (toggle == 0) {
-            printf("Hey player\n");
+            printf("Hey player!\n");
             printf("What hair does your monkey have?\n");
             scanf(" %c", &hair);
             printf("What do its eyes look like?\n");
@@ -37,7 +37,7 @@ int main(void) {
             printf("\nIf you're not happy with it type ""0"" or");
             printf(" type any other character and forever hold your peace.\n");
             scanf(" %c", &maybe);
-            if (maybe != 0) {
+            if (maybe != '0') {
                 toggle = 1;
             }
             printf("How many legs does your monkey have?\n");
@@ -87,6 +87,7 @@ int main(void) {
         }
         printf("\n");
         char end;
+        printf("Nice, you're a winner in my books!\n");
         printf("Enter any character to play again, or ctrl c to quit");
         scanf(" %c", &end);
     }
