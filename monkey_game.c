@@ -18,7 +18,7 @@ int main(void) {
         char tail;
         int legs;
         int toggle = 0;
-        char maybe;
+        int maybe;
         char eyes;
         while (toggle == 0) {
             printf("Hey player!\n");
@@ -35,16 +35,16 @@ int main(void) {
             printf("%c(%c %c)%c\n", ears, eyes, eyes, ears);
             printf("  (%c)\n", mouth);
             printf("\nIf you're not happy with it type ""0"" or");
-            printf(" type any other character and forever hold your peace.\n");
-            scanf(" %c", &maybe);
-            if (maybe != '0') {
+            printf(" type any other integer and forever hold your peace.\n");
+            scanf("%d", &maybe);
+            if (maybe != 0) {
                 toggle = 1;
             }
-            printf("How many legs does your monkey have?\n");
-            scanf("%d", &legs);
-            printf("And it's tail?\n");
-            scanf(" %c", &tail);
         }
+        printf("How many legs does your monkey have?\n");
+        scanf("%d", &legs);
+        printf("And it's tail?\n");
+        scanf(" %c", &tail);
         int counter = 0;
         printf("Here's your monkey\n");
         printf("\n");
